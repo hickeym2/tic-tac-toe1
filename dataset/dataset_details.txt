@@ -1,0 +1,54 @@
+1.	Title:
+		Tic-Tac-Toe Dataset
+
+2. 	Source:
+		August 8, 2018
+		This dataset was built upon a random number generator. 
+
+		Python code is used to generate random tic-tac-toe moves.
+
+		def rng_action():
+		slot = random.randint(0, 9)
+
+		return slot
+
+3.	Number of Instances:
+		1000
+
+4.	Number of Attributes:
+		10
+
+5.	Attribute Ledgend:
+		
+		ttt = tic-tac-toe grid
+
+		[ttt_top_left, ttt_top_middle, ttt_top_right, ttt_middle_left, ttt_middle_middle, ttt_middle_right, ttt_bottom_left, ttt_bottom_middle, ttt_bottom_right, outcome]
+
+		Epoch structure
+			0: 	The north west corner slot of the ttt grid.
+			1: 	The north slot of the ttt grid.
+			2: 	The north east corner slot of the ttt grid.
+			3:  The west slot of the ttt grid.
+			4:	The center slot of the ttt grid.
+			5:  The east slot of the ttt grid.
+			6:  The south west corner slot of the ttt grid.
+			7:	The south slot of the ttt grid.
+			8:  The south east corner slot of the ttt grid.
+			9:  The outcome of the game. 
+
+		Epoch Contents
+			0 = blank slot, 1 = player "x", 2 = player "o", 3 = Tie.
+
+		Example:
+			A game whose outcome produced the following array of data,
+			[2	0	1	2	1	2	1	1	0	1]
+
+			Would produce a ttt table of
+
+			  o |   | x
+			------------
+			  o | x | o
+			------------
+			  x | x |   
+
+			 And the winner is x
